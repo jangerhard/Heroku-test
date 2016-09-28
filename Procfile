@@ -1,1 +1,1 @@
-web:    java -jar target/helloworld.jar
+web: gunicorn gettingstarted.wsgi --log-file -

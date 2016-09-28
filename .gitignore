@@ -1,4 +1,5 @@
-target
+venv
+*.pyc
+staticfiles
 .env
-.idea/
-*.iml
+db.sqlite3
