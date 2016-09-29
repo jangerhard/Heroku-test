@@ -26,9 +26,7 @@
 			<p>
 				The date now is:
 				<%= new java.util.Date() %></p>
-			<p>
-				
-			</p>
+			<p></p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 				suscipit hendrerit aliquam. Cras sodales pharetra lacus et placerat.
 				Morbi varius scelerisque dui quis egestas. Nunc feugiat imperdiet
@@ -50,8 +48,11 @@
 				<input type="button" onclick="sayHello()" value="Say hello!" />
 			</div>
 			<div>
-
-				<input type="button" onclick="sendSMS()" value="Send SMS!" />
+				<form name="sms" action="sendSMSTwilio.php" method="POST">
+				
+				<input type="submit" value="Send SMS!" name="submit"> 
+				
+				</form>
 			</div>
 
 			<br>
