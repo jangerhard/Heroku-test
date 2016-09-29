@@ -27,7 +27,7 @@
 	<div data-role="page">
 
 		<div data-role="header">
-			<h1>Hi Dr. Scharff!</h1>
+			<h1>Hi everyone!</h1>
 		</div>
 
 		<div data-role="content">
