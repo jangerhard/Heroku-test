@@ -1,4 +1,4 @@
 target
-.env
-.idea/
-*.iml
+tomcat.5000/
+tomcat.8080/
+/bin/
