@@ -14,13 +14,7 @@
 <script type="text/javascript"
 	src="//media.twiliocdn.com/sdk/js/client/v1.3/twilio.min.js"></script>
 	
-<script type="text/javascript">
-<!--
-	function sayHello() {
-		alert("Hello World")
-	}
-//-->
-</script>
+<script type="text/javascript" src="javascript.js"></script>
 </head>
 
 <body>
