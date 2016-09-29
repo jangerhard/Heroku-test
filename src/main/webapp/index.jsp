@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sample0 - Skeleton</title>
+<title>Jan Schoepp - CS644</title>
 
 <link rel="stylesheet" href="themes/customTheme.min.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
@@ -10,14 +10,12 @@
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script
 	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	
-<script type="text/javascript"
-	src="/media.twiliocdn.com/sdk/js/client/v1.3/twilio.min.js"></script>
-	
-<script type="text/javascript" src="javascript.js"></script>
+<script src="javascript.js"></script>
+
 </head>
 
 <body>
+
 	<div data-role="page">
 
 		<div data-role="header">
@@ -25,6 +23,12 @@
 		</div>
 
 		<div data-role="content">
+			<p>
+				The date now is:
+				<%= new java.util.Date() %></p>
+			<p>
+				
+			</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 				suscipit hendrerit aliquam. Cras sodales pharetra lacus et placerat.
 				Morbi varius scelerisque dui quis egestas. Nunc feugiat imperdiet
@@ -40,15 +44,21 @@
 			<img src="daug.jpg" alt="wut" />
 
 			<p>This is just to test out different styles.</p>
+
 			<div>
 
-				<input type="button" onclick="sayHello()" value="Send sms!" />
+				<input type="button" onclick="sayHello()" value="Say hello!" />
 			</div>
+			<div>
+
+				<input type="button" onclick="sendSMS()" value="Send SMS!" />
+			</div>
+
 			<br>
 			<div>
 				<ul data-role="listview" data-inset="true" data-filter="true">
 					<li><a href="http://www.nyc.gov">NYC</a></li>
-					<li>Boston</li>
+					<li>Georgia</li>
 					<li>St Louis</li>
 				</ul>
 			</div>
