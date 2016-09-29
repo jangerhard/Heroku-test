@@ -1,44 +1,69 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>First HTML page</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-         <!--
-            function sayHello() {
-               alert("Hello World")
-            }
-         //-->
-      </script>
+<title>Sample0 - Skeleton</title>
+
+<link rel="stylesheet" href="themes/customTheme.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+<script type="text/javascript"
+	src="//media.twiliocdn.com/sdk/js/client/v1.3/twilio.min.js"></script>
+	
+<script type="text/javascript">
+<!--
+	function sayHello() {
+		alert("Hello World")
+	}
+//-->
+</script>
 </head>
 
 <body>
-    <header>
+	<div data-role="page">
 
-    </header>
-        <h1>What's up, World?</h1>
+		<div data-role="header">
+			<h1>Hi Dr. Scharff!</h1>
+		</div>
 
+		<div data-role="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+				suscipit hendrerit aliquam. Cras sodales pharetra lacus et placerat.
+				Morbi varius scelerisque dui quis egestas. Nunc feugiat imperdiet
+				lobortis. Morbi et sapien finibus ligula consectetur placerat et non
+				mauris. Cras malesuada ipsum quis quam posuere, in feugiat quam
+				euismod. Donec volutpat tincidunt erat, non dignissim nisi commodo
+				nec. Nulla efficitur tincidunt nibh vel semper. Phasellus velit
+				odio, tempus id leo in, elementum iaculis ante. Nullam egestas orci
+				nec eros mollis lacinia. Pellentesque habitant morbi tristique
+				senectus et netus et malesuada fames ac turpis egestas. Sed pretium
+				sapien sed cursus imperdiet.</p>
 
-        <p class="middleParagraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae cursus justo. Vestibulum porta leo id diam placerat hendrerit. Quisque a nulla pharetra, placerat urna nec, ultrices ipsum. Suspendisse consectetur vel urna blandit mollis. Suspendisse
-            semper augue id nisl tincidunt congue. Nunc eget accumsan magna. Suspendisse purus arcu, euismod vel mattis et, interdum et elit. Suspendisse eget aliquet eros. Morbi nec pulvinar velit. In tellus risus, ultrices eget sagittis sit amet, tempus
-            at sapien. Sed tellus mi, tristique a purus eu, commodo ultrices mi. Aenean bibendum nisi eget tempus vehicula. Donec ultricies erat sed pretium lacinia.
-        </p>
+			<img src="daug.jpg" alt="wut" />
 
-        <img src="daug.jpg" alt="wut" />
-        <p>
-            <a href="http://www.google.com">Go to Google</a>
-        </p>
+			<p>This is just to test out different styles.</p>
+			<div>
 
-        <button type="button" onclick="document.getElementById('dateDiv').innerHTML = Date()">
-          Click me to display Date and Time.</button>
+				<input type="button" onclick="sayHello()" value="Send sms!" />
+			</div>
+			<br>
+			<div>
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li><a href="http://www.nyc.gov">NYC</a></li>
+					<li>Boston</li>
+					<li>St Louis</li>
+				</ul>
+			</div>
+		</div>
 
-        <input type="button" onclick="sayHello()" value="Say Hello" />
+		<div data-role="footer">
+			<h5>This is the bottom of the site..</h5>
+		</div>
 
-        <p id="dateDiv"></p>
-
-    <footer>End of page</footer>
-
+	</div>
 </body>
-
 </html>
