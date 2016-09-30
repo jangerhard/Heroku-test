@@ -8,7 +8,13 @@
 <title>SMS Sent!</title>
 </head>
 <body>
+<%
 
+	twilioSMS s = new twilioSMS();
+
+	s.sendSMS();
+
+%>
 
 </body>
 </html>

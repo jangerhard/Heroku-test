@@ -15,10 +15,14 @@ import org.apache.http.message.BasicNameValuePair;
 public class twilioSMS {
 
     /* Find your sid and token at twilio.com/user/account */
-    public static final String ACCOUNT_SID = "AC123";
-    public static final String AUTH_TOKEN = "456bef";
+    public static final String ACCOUNT_SID = "ACf4e148816559544ed7ce17003dcc37e5";
+    public static final String AUTH_TOKEN = "a54f023543553bdcac6fbada4f1b0a0c";
+    
+    public twilioSMS(){
+    	
+    }
 
-    public static void main(String[] args) throws TwilioRestException {
+    public static void sendSMS throws TwilioRestException {
 
         TwilioRestClient client = new TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN);
 
@@ -26,9 +30,9 @@ public class twilioSMS {
 
         MessageFactory messageFactory = account.getMessageFactory();
         List<NameValuePair> params = new ArrayList<NameValuePair>();
-        params.add(new BasicNameValuePair("To", "+14159352345")); // Replace with a valid phone number for your account.
-        params.add(new BasicNameValuePair("From", "+14158141829")); // Replace with a valid phone number for your account.
-        params.add(new BasicNameValuePair("Body", "Where's Wallace?"));
+        params.add(new BasicNameValuePair("To", "+12035502615")); // Replace with a valid phone number for your account.
+        params.add(new BasicNameValuePair("From", "+12039894740")); // Replace with a valid phone number for your account.
+        params.add(new BasicNameValuePair("Body", "Sent from java servlet"));
         Message sms = messageFactory.create(params);
     }
 }
