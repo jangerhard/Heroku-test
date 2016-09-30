@@ -20,10 +20,11 @@
 			<artifactId>twilio-java-sdk</artifactId>
 			<version>(6.0,6.9)</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
 		<dependency>
-			<groupId>com.efsavage.jquery</groupId>
-			<artifactId>jquery-maven</artifactId>
-			<version>1.7.2</version>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>2.1.4</version>
 		</dependency>
 	</dependencies>
 	<build>
