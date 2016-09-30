@@ -48,7 +48,7 @@
 				<input type="button" onclick="sayHello()" value="Say hello!" />
 			</div>
 			<div>
-				<form name="sms" action="sendSMSTwilio.php" method="POST">
+				<form name="sms" action="test.jsp" method="POST">
 				
 				<input type="submit" value="Send SMS!" name="submit"> 
 				

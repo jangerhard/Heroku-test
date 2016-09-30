@@ -2,7 +2,7 @@
 // this line loads the library 
 require('Twilio.php'); 
  
-echo "Hello";
+echo "Testing";
  
 $account_sid = 'ACf4e148816559544ed7ce17003dcc37e5'; 
 $auth_token = 'a54f023543553bdcac6fbada4f1b0a0c'; 

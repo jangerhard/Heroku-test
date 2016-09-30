@@ -20,6 +20,11 @@
 			<artifactId>twilio-java-sdk</artifactId>
 			<version>(6.0,6.9)</version>
 		</dependency>
+		<dependency>
+			<groupId>com.efsavage.jquery</groupId>
+			<artifactId>jquery-maven</artifactId>
+			<version>1.7.2</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>webappRunnerSample</finalName>
