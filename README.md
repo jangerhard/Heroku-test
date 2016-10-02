@@ -148,6 +148,7 @@ Deploy your code:
 Congratulations! Your web app should now be up and running on Heroku. Open it in your browser with:
 
     :::term  
+    $ heroku ps:scale web=1
     $ heroku open
 
 ## Use Distributed HTTP Sessions with Memcache
