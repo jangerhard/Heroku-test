@@ -1,3 +1,6 @@
+Simple Java application running on a Heroku Server, made by following the tutorial here:
+http://luckypants.weebly.com/set-up-a-simple-web-app-and-deploy-on-heroku.html
+
 Webapp Runner allows you to launch an application in a Tomcat container on any computer that has a JRE installed. No previous steps to install Tomcat are required when using Webapp Runner. It's just a jar file that can be executed and configured using the `java` command.
 
 This article will walk you through building an application that launches with Webapp Runner and deploying that application to Heroku.
