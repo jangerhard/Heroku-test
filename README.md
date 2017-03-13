@@ -1,3 +1,7 @@
+Simple Java application running on a Heroku Server, made by following the tutorial here:
+
+http://luckypants.weebly.com/set-up-a-simple-web-app-and-deploy-on-heroku.html
+
 Webapp Runner allows you to launch an application in a Tomcat container on any computer that has a JRE installed. No previous steps to install Tomcat are required when using Webapp Runner. It's just a jar file that can be executed and configured using the `java` command.
 
 This article will walk you through building an application that launches with Webapp Runner and deploying that application to Heroku.
@@ -12,7 +16,7 @@ Follow each step to build an app from scratch, or skip to the end get the source
 ### How Does Webapp Runner Work?
 
 When using Webapp Runner you'll launch your application locally and on Heroku with a command like this:
-    
+
     :::term
     $ java -jar webapp-runner.jar application.war
     deploying app from: /Users/johnsimone/dev/gitrepos/devcenter-webapp-runner/target/webappRunnerSample.war
@@ -37,7 +41,7 @@ Webapp Runner will then launch a Tomcat instance with the given war deployed to 
     [INFO] Generating project in Interactive mode
     Define value for property 'groupId': : com.example
     Define value for property 'artifactId': : helloworld
-    
+
 (you can pick any groupId or artifactId). You now have a complete Java web app in the `helloworld` directory.
 
 ## Configure Maven to Download Webapp Runner
@@ -47,7 +51,7 @@ Although not necessary for using Webapp Runner it's a good idea to have your bui
     <build>
         ...
         <plugins>
-            ...    
+            ...
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -127,7 +131,7 @@ Deploy your code:
     -----> Installing settings.xml..... done
     -----> executing .maven/bin/mvn -B -Duser.home=/tmp/build_1jems2so86ck4 -s .m2/settings.xml -DskipTests=true clean install
            [INFO] Scanning for projects...
-           [INFO]                                                                         
+           [INFO]
            [INFO] ------------------------------------------------------------------------
            [INFO] Building webappRunnerSample Maven Webapp 1.0-SNAPSHOT
            [INFO] ------------------------------------------------------------------------
@@ -147,7 +151,7 @@ Deploy your code:
 
 Congratulations! Your web app should now be up and running on Heroku. Open it in your browser with:
 
-    :::term  
+    :::term
     $ heroku ps:scale web=1
     $ heroku open
 
